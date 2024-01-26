@@ -79,7 +79,7 @@ h1, h2, h3 {
 
 main {
     margin: auto;
-    background-color: #A9DFBF;
+    background-color: var(--cor4) ;
     padding: 50px;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -91,9 +91,7 @@ main {
 
 article.apresentaçao {
     margin: auto;
-    padding: 50px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-top: 50px;
     columns: 2;
     min-width: 300px;
     max-width: 1000px;
@@ -101,9 +99,6 @@ article.apresentaçao {
 
 .apresentaçao section > h1 {
     font-size: 2.5em;
-    margin-top: 25px;
-    margin-left: auto; 
-    
 }
 
 .apresentaçao section > h2 {
@@ -120,22 +115,25 @@ article.apresentaçao {
     margin: auto;
     height: auto;
     width: auto;
+    padding-bottom: 65px;
 }
 
 .imgv1200 {
-    width: 75%;
-    margin-left: 100px;
-    border-radius: 15px;
+    max-width: 60%;
+    border-radius:  15px;
+    display: block;
+    
+    margin-left: 120px;
 }
 
-.imgv600{
-    display: 1;
-
+.paralex {
+    margin: auto;
+    display: block;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0%;
 }
-
-.imgv300{
- display: 1;
-}
+   
 
 
 h2 {
@@ -148,37 +146,51 @@ article#projetos {
     margin: auto;
     padding: 50px;
     padding-bottom: 15px;
-    padding-top: 15px;
+    padding-top: 40px;
     min-width: 300px;
     max-width: 1000px;
+    background-image:url(imagens/harmo_decor_sala_600.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    columns: 2;
+    column-gap: 45px;
+    border-radius: 10px;
 }
 .projeto {
-    background-color: var(--cor2);
+    background-color: #6082b694;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
+}
+
+#contato {
+    padding-top: 10px;
 }
 
 .button {
-    background-color: #FFD166;
-    color: #fff;
+    background-color:  #f9e574;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
 }
 
+
 .footer-text {
     color: var(--cor4);
 }
 
-footer span {
-    color: var(--cor1);
+footer > span {
+    color: #f9e574;
 }
 
 footer {
+  
     background-color: var(--cor0);
     color: var(--cor1);
     text-align: center;
