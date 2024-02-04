@@ -1,23 +1,53 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px){
-    
+@media screen and (min-width: 769px) {
     nav {
         text-align: left;
-    }
-    
-    main {
-        width: 70%;
-        height: 200%;
+        margin-left: 20px;
     }
 
-    .apresentacao {
-        display: inline-block;
-        box-sizing: border-box;
+    main {
+        width: 80%;
+    }
+
+    aside > h1 {
+        font-size: 2.5em;
         text-align: center;
     }
+    
+    aside > h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    aside > p {
+        text-indent: 35px;
+    }
 
-    article#projetos {
+    section#lados {
+        
+    }
+
+    aside#apresentacao {
+        display: inline-block;
+        
+    }
+
+    
+    .imagem {
+        display: inline-block;
+        width: 90%;
+        height: 650px;
+    }
+    
+    aside.junto {
+        
+        text-align: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #projeto {
         background-attachment: fixed;
         background-size: cover;
     }
