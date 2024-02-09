@@ -1,74 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="estilo/mediaquery.css">
-    <title>Harmony Decor</title>
-</head>
-<body>
-    <header>
-        <h1>Harmony Decor.</h1>
-        <p>Design de Interiores</p>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Projetos</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h1>
-                Bem-vindo à Harmony Decor
-            </h1>
-            <section id="lados">
-                <aside id="apresentacao">
-                    
-                        <h2>
-                           <span class="quebralinha">Sua Experiência em</span> <span style="color:#f9e574;" >Design de Interiores</span>
-                        </h2>
-                    <br>
-                    <p>Somos apaixonados por transformar espaços em ambientes inspiradores e agradável para sua familia. Na <span style="font-weight: bold;">Harmony Decor</span>,  buscamos a harmonia perfeita entre estética e funcionalidade.
-                    Nosso comprometimento vai além da estética, Ao incorporar elementos personalizados e soluções inovadoras, criamos espaços que não apenas encantam visualmente, mas também proporcionam conforto e praticidade á sua familia.
-                    </p>
-                </aside>
-                <aside class="junto">
-                    <img src="imagens/decor_blue.jpg" alt="Sala feita sob designer de Interiores"  class="imagem">
-                </aside> 
-            </section>
-        </article>
-      
-        <article id="projeto">
-            <section>
-                <div class="projetos" id="resid">
-                    <h3>Projeto Residencial</h3>
-                    <p>Transformamos espaços residenciais em lares acolhedores e funcionais.</p>
-                    <p>Exploramos uma variedade de estilos, desde clássico até contemporâneo, adaptando-nos ao gosto único de cada cliente. Acreditamos que o design de interiores não se trata apenas de beleza, mas também de criar ambientes que contem histórias e reflitam a personalidade de quem vive neles.</p>
-                </div>
-                <div class="projetos">
-                    <h3>Projeto Comercial</h3>
-                    <p>
-                        Criamos ambientes comerciais que refletem a identidade da marca e atraem clientes.
-                    </p>
-                    <p>
-                        Além de atender residências, a Harmony Decor também é especializada em colaborações corporativas. Trabalhamos com empresas para criar ambientes de trabalho inspiradores que refletem a identidade da marca e promovem um ambiente produtivo e acolhedor para seus colaboradores.
-                    </p>
-                </div>
-            </section>
-        </article>
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para transformar seu espaço!</p> <br>
-            <a href="#" class="botao">Entrar em Contato</a>
-        </section>
-    </main>
+<html lang="pt-br" class="telalogar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/bootstrap-icons.svg"
+    />
+  </head>
+  <body class="telalogar">
+    <div id="login" class="p-3 m-2">
+      <h1 class="mb-4 display-6">Login</h1>
+      <form action="principal.html" method="get">
+        <div class="form-floating">
+          <input
+            type="email"
+            name="logemail"
+            id="email"
+            class="form-control mb-2"
+            placeholder=""
+            required
+            maxlength="40"
+            minlength="5"
+            autocomplete="email" 
+          />
+          <label for="email" class="form-label">Email</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            name="logsenha"
+            id="senha"
+            class="form-control"
+            placeholder=" "
+            required
+            minlength="8"
+            maxlength="25"
+            autocomplete="current-password"
+          />
+          <label for="senha" class="form-label">Senha</label>
+        </div>
+        <p class="form-text text-black">
+          Não compartilhe seus dados com terceiros<span style="color: red"
+            >*</span
+          >
+        </p>
+        <div class="mb-3">
+          <a href="#">Esqueci minha senha</a>
+          <a href="#" class="float-end">Não tem uma conta?</a>
+          <span class="clearfix"></span>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 <span style="color: #f9e574;">Harmony Decor.</span> Todos os direitos reservados.</p>
-    </footer>
-</body>
+        <div>
+          <a href="principal.html"
+            ><button class="btn btn-primary w-100 mb-1">Logar</button></a
+          >
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
-
-<!-- Explore nosso portfólio e descubra como podemos transformar o seu espaço em algo verdadeiramente excepcional. Seja bem-vindo à Harmony Decor, onde a beleza encontra a funcionalidade, e cada detalhe conta uma história. -->
